@@ -1,0 +1,15 @@
+{
+  "name": "shelter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "style": "node-sass --source-map true --output-style expanded  --watch pages/main/main.scss pages/main/main.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dmitry Chizhov",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}

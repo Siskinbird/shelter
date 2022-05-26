@@ -1,0 +1,57 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+.hero-body__button {
+    border-radius: 100px;
+    align-items: center;
+    width: 207px;
+    height: 52px;
+    background: $color-primary;
+    margin-bottom: 244px;
+    margin-top: 26px;
+    font-size: 1.7em;
+    border: solid 1px $color-primary;
+    letter-spacing: 0.06em;
+    cursor: pointer;  
+    transition: .5s; 
+}
+.pets-button {
+    width: 187px;
+    height: 52px;
+    font-size: 1.7em;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    border: 2px solid $color-primary;
+    background: transparent;
+    border-radius: 100px;
+    color: $color-dark-3xl;
+    transition: .3s ease;
+    &:hover {
+        background-color: $color-primary-light;
+    }
+}
+
+.pets-body__rest-button {
+    border-radius: 100px;
+    align-items: center;
+    width: 261px;
+    height: 52px;
+    background: $color-primary;
+    margin-top: 26px;
+    font-size: 1.7em;
+    border: solid 1px $color-primary;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+}
+/* 1 */
+.btn-1 {
+    background: $color-primary;
+    background: linear-gradient(0deg, $color-primary 0%, $color-primary-light 100%);
+    border: none;
+    &:hover{
+        border: solid 2px $color-primary-light;
+      background: $color-primary-light;
+      background: linear-gradient(0deg,  $color-primary-light 0%, $color-primary-dark 100%);
+      box-shadow: -2px -2px 12px 20px rgba(227, 175, 90, 0.25) inset;
+    } 
+}

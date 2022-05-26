@@ -1,0 +1,41 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+
+@mixin breakpoint($point) {
+  @if $point == xl {
+    @media(max-width: 1280px) {@content;}
+  }
+  @else if $point == lg {
+    @media(max-width: 1279px) {@content;}
+  }
+  @else if $point == md {
+    @media(max-width: 768px) {@content;}
+  }
+  //Промежуточные брейки
+  @else if $point == burger {
+    @media(max-width: 767px) {@content;}
+  }
+  @else if $point == pre320 {
+    @media(max-width: 700px) {@content;}
+  }
+  @else if $point == b710 {
+    @media(max-width: 710px) {@content;}
+  }
+  @else if $point == b655 {
+    @media(max-width: 655px) {@content;}
+  }
+  @else if $point == b654 {
+    @media(max-width: 654px) {@content;}
+  }
+  @else if $point == b342 {
+    @media(max-width: 342px) {@content;}
+  }
+  //Промежуточные брейки
+  @else if $point == sm {
+    @media(max-width: 576px) {@content;}
+  }
+  @else if $point == xs {
+    @media(max-width: 320px) {@content;}
+  }  
+}

@@ -1,0 +1,99 @@
+/**
+ * Basic typography style for copy text
+ */
+body {
+  font-family:$text-font-stack;
+  font-size: $standart-font-size;
+  color: 	#FFFFFF;
+}
+
+h1 {
+  font-family: $text-font-stack;
+  font-size: 3.2em;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  color: $color-primary;
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 4.4em;
+  color: $color-light-xl;
+  font-weight: normal;
+  line-height: 133%;
+}
+
+h3 {
+  font-size: 3.5em;
+  color: $color-dark-l;
+  font-weight: normal;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+}
+
+.h3-mobile {
+  font-size: 2.5em;
+  line-height: 130%;
+  letter-spacing: 0.15em;
+}
+
+h4 {
+  font-size: 2em;
+  color: $color-dark-l;
+  font-weight: normal;
+  line-height: 115%;
+  letter-spacing: 0.12em;
+}
+
+h5 {
+  font-size: 1.5em;
+  color: $paragraph-color;
+  font-weight: normal;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+}
+
+/* .logo__title {
+
+  font-size: 3.2em;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  color: $color-primary;
+} */
+
+.logo__subtitle {
+  padding-top: 11px;
+  font-size: 1.3em;
+  font-family: $text-font-paragraph;
+  line-height: 100%;
+  letter-spacing: 0.11em;
+  color: $color-light-xl;
+  margin-left: 3px;
+}
+
+.paragraph-l {
+  font-family: $text-font-paragraph;
+  font-size: 1.5em;
+  line-height: 160%;
+  color: $color-dark-s;
+}
+
+.paragraph-s {
+  font-family: $text-font-paragraph;
+  font-style: italic;
+  font-size: 1.2em;
+  line-height: 150%;
+  color: $paragraph-color;
+}
+
+.pet-name__title {
+  font-family: $text-font-stack;
+  font-weight: normal;
+  font-size: 2em;
+  color: $color-dark-l;
+  text-align: center;
+  line-height: 45px;
+  letter-spacing: 0.06em;
+}

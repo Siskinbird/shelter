@@ -1,0 +1,113 @@
+.donation {
+    background-color: $color-light-l;
+}
+.donation-body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 53px;
+    padding-bottom: 88px;
+    @include breakpoint(lg) {
+        flex-direction: column-reverse;
+        padding-top: 39px;
+    }
+    @include breakpoint(sm) {
+        margin-top: -53px;
+        padding-top: 18px;
+        padding-bottom: 40px;
+    }
+
+}
+.donation-body__description {
+    margin-left: 30px;
+    h3 {
+        max-width: 300px;
+        line-height: 127%;
+        margin-top: 29px;
+        @include breakpoint(lg) {
+            margin-top: 42px;
+        }
+        @include breakpoint(sm) {
+            font-size: 2.5em;
+            text-align: center;
+            max-width: 228px;
+            margin: 24px auto;
+        }
+    }
+    h4 {
+        letter-spacing: 0.06em;
+        @include breakpoint(sm) {
+            font-size: 1.5em;
+        }
+    }
+    h5 {
+        margin-top: -14px;
+        color: $color-dark-l;
+        @include breakpoint(sm) {
+            margin-top: 25px;
+            letter-spacing: 0;
+            margin-left: 7px
+        }
+    }
+    p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: italic;
+        color: $color-dark-m;
+        line-height: 18px;
+        font-size: 1.2em;
+        max-width: 380px;
+        margin-top: 19px;
+        @include breakpoint(sm) {
+            text-align: justify;
+            max-width: 287px;
+        }
+    }
+    @include breakpoint(lg) {
+        margin-left: 0;
+    }
+}
+.donation-body__requisites {
+    display: flex;
+    flex-direction: row;
+    max-width: 349px;
+    height: 43px;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: $color-primary;
+    border-radius: 9px;
+    margin-top: -6px;
+    cursor: pointer;
+    transition: .3s;
+    img {
+        padding: 10px 15px;
+    }
+    &:hover {
+        transform: scale(1.2);
+    }
+    @include breakpoint(sm) {
+        margin-right: 3px;
+        margin-left: 4px;
+        /* padding-top: 10px; */
+        margin-top: 0;
+    }
+
+}
+.donation-body__image {
+    margin-top: 18px;
+    @include breakpoint(lg){
+        margin-top: 48px
+    }
+    @include breakpoint(sm) {
+        margin-top: 30px;
+        margin-left: 25px;
+    }
+}
+.donation-body__image img {
+    @include breakpoint(pre320){
+        width: 87%;
+    }
+    @include breakpoint(sm){
+        width: 93%;
+    }
+}

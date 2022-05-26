@@ -1,0 +1,151 @@
+.pets {
+    background-color: $color-light-l;
+}
+.pets-body {
+    @include breakpoint(burger) {
+        padding-bottom: 40px;
+    }
+    @include breakpoint(sm) {
+        padding-bottom: 20px;
+    }
+}
+
+.pets-body__title {
+    h3 {
+        max-width: 400px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 60px;
+        @include breakpoint(md) {
+            margin-top: 28px;
+        }
+        @include breakpoint(burger) {
+            font-size: 2.5em;
+            margin-top: -10px;
+        }
+    }
+}
+.pet-name__title {
+    @include breakpoint(burger) {
+        line-height: 35px;
+    }
+}
+
+.pets-body__rest {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+    padding-bottom: 100px;
+    @include breakpoint(burger) {
+        margin-top: 114px;
+    }
+    @include breakpoint(burger) {
+        margin-top: 82px;
+        padding-bottom: 20px;
+    }
+}
+
+.slider-item {
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    height: 435px;
+    background-color: $color-light-s;
+    border-radius: 9px;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 23px;
+    margin-bottom: 20px;
+    transition: .5s ease;
+    cursor: pointer;
+    &:hover {
+        box-shadow: 0px 0px 10px 2px rgba(71, 68, 64, 0.2);
+        background-color: $color-light-xl;
+    }
+    @include breakpoint(lg) {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+.slider-item:nth-child(3) {
+    @include breakpoint(lg) {
+        display: none;
+    }
+}
+.slider-item:nth-child(2) {
+    @include breakpoint(burger) {
+        display: none;
+    }
+}
+
+.slider-item .pets-button {
+    background-color: $color-primary-light;
+}
+
+
+.pets-body__left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    background-color: transparent;
+    border: 2px solid $color-primary;
+    border-radius: 50%;
+    transition: all .5s;
+    cursor: pointer;
+    left: 0;
+    top: 44%;
+    &:hover {
+        background-color: $color-primary-light;
+        border: 2px solid $color-primary-light;
+    }
+}
+
+.pets-body__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    background-color: transparent;
+    border: 2px solid $color-primary;
+    border-radius: 50%;
+    transition: all .5s;
+    cursor: pointer;
+    right: 0;
+    top: 44%;
+    &:hover {
+        background-color: $color-primary-light;
+        border: 2px solid $color-primary-light;
+    }
+}
+
+.swiper-container {
+    max-width: 990px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.slider__inner {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    transition: all 1s;
+    @include breakpoint(lg) {
+        justify-content: center;
+    }
+
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
+}
