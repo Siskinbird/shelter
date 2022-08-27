@@ -1,0 +1,131 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+ul {
+    list-style: none;
+}
+
+.header {
+    width: 100%;
+}
+
+.header-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @include breakpoint(lg) {
+        padding-top: 30px;
+        padding-bottom: 0;
+    }
+}
+
+.menu {
+    margin-bottom: 10px;
+    @include breakpoint(burger) {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 620px;
+        height: 100%;
+        padding: 20px;
+        transform: translateX(100%);
+        z-index: 2;
+        padding: 0;
+        transition: ease .75s;
+    }
+}
+
+.menu-list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    opacity: 1;
+
+    @include breakpoint(burger) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 5px;
+        margin: auto 0;
+        padding-top: 248px;
+        font-size: 32px;
+        .menu-item {
+            margin-top: 40px;
+        }
+    }
+}
+
+.menu__link {
+    margin-left: 32px;
+    padding-bottom: 5px;
+}
+
+.header-logo {
+    a {
+        text-decoration: none;
+    }
+}
+
+.burger { 
+    position: relative;
+    right: 37px;
+    display: none;
+    background-color: transparent;
+    border: none;
+    z-index: 2;
+    @include breakpoint(burger) {
+        display: block;
+        position: absolute;
+        background-image: url(../../../assets/svg/burger.svg);
+        width: 30px;
+        height: 22px;
+        top: 42px;
+        right: 20px;
+        transition: ease .3s;
+    }
+}
+
+.burger-cover {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.active {
+    @include breakpoint(burger) {
+    width: 320px;
+    background-color: #292929;  
+    transform: translateX(0%);
+    
+    .menu-list {
+        opacity: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 5px;
+        margin: auto 0;
+        padding-top: 248px;
+        font-size: 32px;
+    }
+    li {
+        margin-top: 40px
+    }
+}
+}
+
+
+.is-active{
+    transform: rotate(90deg);
+}
+

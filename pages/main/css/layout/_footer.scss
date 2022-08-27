@@ -1,0 +1,156 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+.footer {
+    max-width: 100%;
+    background: radial-gradient(circle, rgba(91,72,58,1) 0%, rgba(33,31,32,1) 100%);
+    overflow: hidden;
+    height: 356px;
+    h3 {
+        color: $color-light-xl;
+        @include breakpoint(burger){
+            font-size: 2.5em;
+        }
+    }
+    h4 {
+        color: $color-primary;
+        letter-spacing: 0.06em;
+        margin: 5px 0;
+        @include breakpoint(burger) {
+            text-align: left;
+        }
+    }
+    @include breakpoint(lg) {
+        height: 688px;
+    }
+    @include breakpoint(md) {
+        height: 652px;
+    }
+    @include breakpoint(burger) {
+        height: 810px;
+    }
+
+}
+.footer-body {
+    display: flex;
+    justify-content: space-between;
+    @include breakpoint(lg) {
+        display: block;
+    }
+}
+
+.footer-body__connection {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 24px;
+    max-width: 730px;
+    @include breakpoint(lg) {
+        margin: 0 auto;
+        padding-top: 30px;
+        justify-content: center;
+        max-width: 643px;
+    }
+    @include breakpoint(md){
+        padding-top: 5px;
+    }
+    @include breakpoint(burger) {
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+.footer-body__contacts {
+    max-width: 290px;
+    margin-right: 149px;
+    @include breakpoint(lg) {
+        margin-right: 49px;
+    }
+    @include breakpoint(burger) {
+        margin-bottom: 45px;
+        margin-right: 0;
+        margin-left: 0;
+        text-align: center;
+    }
+}
+.footer-body__address {
+    margin-right: -10px;
+    max-width: 302px;
+    @include breakpoint(lg) {
+        margin-right: 13px;
+    }
+    @include breakpoint(md) {
+        margin-right: 13px;
+    }
+    h3 {
+        @include breakpoint(burger) {
+            text-align: center;
+            max-width: 270px;
+            margin-top: -6px;
+            margin-left: 15px;
+        }
+    }
+    @include breakpoint(burger) {
+        margin-right: 0;
+    }
+}
+.footer-body__email {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 2px;
+    img {
+        margin-right: 20px;
+    }
+    @include breakpoint(burger) {
+        justify-content: center;
+        padding-top: 16px;
+    }
+
+}
+.footer-body__phone {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 40px;
+    img {
+        margin-right: 20px;
+    }
+    @include breakpoint(burger) {
+        justify-content: center;
+        margin-top: 34px;
+    }
+
+}
+.footer-body__map {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 34px;
+    margin-top: -8px;
+    margin-left: -2px;
+    img {
+        margin-right: 20px;
+    }
+    @include breakpoint(burger) {
+        padding-top: 15px;
+    }
+}
+
+.footer-body__puppy {
+    margin-top: 40px;
+    @include breakpoint(lg) {
+        margin: 69px auto 0;
+        display: block;
+    }
+    @include breakpoint(md) {
+        margin: 31px auto 0;
+    }
+    @include breakpoint(burger) {
+       margin-top: 7px;
+        width: 260px;
+    }
+    img {
+        max-width: 100%;
+        display: block;
+    }
+}

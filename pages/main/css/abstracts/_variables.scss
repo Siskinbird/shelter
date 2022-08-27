@@ -1,0 +1,23 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+$color-primary: #F1CDB3;  //Обычное состояние
+$color-primary-light: #FDDCC4; //Под ховером
+$color-primary-dark: #ecaf83;
+$color-light-xl: #FFFFFF;
+$color-light-l: #F6F6F6;
+$color-light-s: #FAFAFA;
+$color-dark-3xl: #292929;
+$color-dark-2xl: #444444;
+$color-dark-xl: #4C4C4C;
+$color-dark-l: #545454;
+$color-dark-m: #B2B2B2;
+$color-dark-s: #CDCDCD;
+$paragraph-color: #C4C4C4;
+
+$text-font-stack: 'Georgia', serif;
+$text-font-paragraph: 'Arial', sans-serif !default;
+$standart-font-size: 10px;
+
+
+$max-width: 1280px;

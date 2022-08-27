@@ -1,0 +1,79 @@
+.hero {
+    width: 100%;
+    height: 908px;
+    background: url(/assets/svg/noise_transparent@2x.svg),
+    radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%), #211f20;
+    @include breakpoint(lg){
+        height: auto;
+    }
+}
+
+.hero-body {
+    padding-top: 179px;
+    margin-top: -179px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    @include breakpoint(lg) {
+        flex-direction: column;
+    }
+}
+
+.hero-body {
+    .paragraph-l {
+    max-width: 460px;
+    }
+    @include breakpoint(burger) {
+        .paragraph-l {
+            text-align: center;
+            padding: 0 2px;
+        }
+    }
+    h2 {
+        margin-top: 163px;
+        max-width: 310px;
+        margin-bottom: 40px;
+        @include breakpoint(lg) {
+            margin-top: 60px;
+        }
+        @include breakpoint(burger) {
+            max-width: 220px;
+            text-align: center;
+            font-size: 2.5em;
+            color: $color-light-xl;
+            font-weight: 400;
+            line-height: 133%;
+            letter-spacing: 0.06em;
+            margin: 61px auto 40px;
+        }
+    }
+}
+.hero-body__description {
+    @include breakpoint(lg) {
+        height: 466px;
+    }
+}
+.hero-body__puppy {
+    justify-content: center;
+}
+
+.hero-body__puppy img{
+    @include breakpoint(lg) {
+    margin-left: 133px;
+    width: 81%;
+    padding-top: 9px;
+    @include breakpoint(burger) {
+        margin-left: 40px;
+    }
+    @include breakpoint(burger) {
+        width: 86%;
+        padding-top: 0;
+        margin-bottom: -2px;
+    }
+}
+
+    
+
+    //max-width: fit-content;
+}

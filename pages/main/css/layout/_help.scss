@@ -1,0 +1,64 @@
+.help {
+    @include breakpoint(burger) {
+        margin-top: -40px;
+    }
+}
+
+.help-body__title {
+    h3 {
+        max-width: 320px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin: 80px auto 60px;
+        @include breakpoint(burger) {
+            font-size: 2.5em;
+        }
+    }
+}
+
+.help-body__items {
+    max-width: 1030px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3.3rem 7.5rem;
+    margin: 0 auto 100px;
+    text-align: center;
+    img {
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+    h4 {
+        letter-spacing: 0.06em;
+        @include breakpoint(burger) {
+            font-size: 1.5em;
+        }
+    }
+    @include breakpoint(lg) {
+        max-width: 630px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 55px 60px;
+    }
+    @include breakpoint(burger) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+        max-width: 290px;
+        margin: -21px auto 100px;
+    }
+}
+
+.help-body__item {
+    height: 113px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include breakpoint(burger) {
+        height: 87px;
+        max-width: 130px;
+    }
+}

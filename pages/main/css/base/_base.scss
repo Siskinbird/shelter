@@ -1,0 +1,62 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+/**
+ * Set up a decent box model on the root element
+ */
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/**
+ * Make all elements from the DOM inherit from the parent box-sizing
+ * Since `*` has a specificity of 0, it does not override the `html` value
+ * making all elements inheriting from the root box-sizing value
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/**
+ * Basic styles for links
+*/
+
+a {
+  text-decoration: none;
+}
+
+.menu {
+  a {
+    color: $color-dark-s;
+    text-decoration: none;
+    transition: .3s;
+    &:hover {
+      border-bottom: solid 3px $color-primary;
+      color: $color-light-s;
+    }
+  }
+}
+
+.menu .active {
+  color: $color-light-s;
+  border-bottom: solid 3px $color-primary;
+}
+
+/* Анимированная полоса */
+/* a {
+  color: $color-dark-s;
+  text-decoration: none;
+  background-image: linear-gradient($color-primary, $color-primary);
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 4px;
+  transition: background-size .3s ease-in;
+  &:hover {
+    background-size: 100% 2px;
+   }
+ } */

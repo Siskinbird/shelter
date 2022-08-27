@@ -1,0 +1,46 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+.header {
+    width: 100%;
+    margin-top: 0;
+    position: fixed;
+    background-color: $color-light-xl;
+}
+
+.header-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.menu__link {
+    margin-left: 32px;
+    padding-bottom: 3px;
+}
+
+.menu {
+    margin-bottom: 10px;
+    @include breakpoint(burger) {
+        display: none;
+    }
+}
+
+.burger{ 
+    display: none;
+    .line {
+        background-color: $color-dark-3xl;
+        width: 32px;
+        height: 3px;
+        display: block;
+        margin: 7px auto;
+        transition: all .3s ease-in-out;
+    }
+    @include breakpoint(burger) {
+        display: block;
+        margin-right: 42px;
+    }
+}
